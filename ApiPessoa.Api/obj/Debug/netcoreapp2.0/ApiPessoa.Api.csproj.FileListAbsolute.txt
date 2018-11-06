@@ -9,3 +9,10 @@ C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Api\obj\D
 C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Api\obj\Debug\netcoreapp2.0\ApiPessoa.Api.AssemblyInfo.cs
 C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Api\obj\Debug\netcoreapp2.0\ApiPessoa.Api.dll
 C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Api\obj\Debug\netcoreapp2.0\ApiPessoa.Api.pdb
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Api\bin\Debug\netcoreapp2.0\ApiPessoa.Domain.dll
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Api\bin\Debug\netcoreapp2.0\ApiPessoa.Shared.dll
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Api\bin\Debug\netcoreapp2.0\ApiPessoa.Domain.pdb
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Api\bin\Debug\netcoreapp2.0\ApiPessoa.Shared.pdb
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Api\obj\Debug\netcoreapp2.0\ApiPessoa.Api.csproj.CopyComplete
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Api\bin\Debug\netcoreapp2.0\ApiPessoa.Infra.dll
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Api\bin\Debug\netcoreapp2.0\ApiPessoa.Infra.pdb

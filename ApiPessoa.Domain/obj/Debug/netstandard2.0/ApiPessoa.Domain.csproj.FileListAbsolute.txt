@@ -1,0 +1,12 @@
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Domain\bin\Debug\netstandard2.0\ApiPessoa.Domain.deps.json
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Domain\bin\Debug\netstandard2.0\ApiPessoa.Domain.dll
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Domain\bin\Debug\netstandard2.0\ApiPessoa.Domain.pdb
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Domain\bin\Debug\netstandard2.0\ApiPessoa.Shared.dll
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Domain\bin\Debug\netstandard2.0\ApiPessoa.Shared.pdb
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Domain\obj\Debug\netstandard2.0\ApiPessoa.Domain.csprojAssemblyReference.cache
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Domain\obj\Debug\netstandard2.0\ApiPessoa.Domain.csproj.CoreCompileInputs.cache
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Domain\obj\Debug\netstandard2.0\ApiPessoa.Domain.AssemblyInfoInputs.cache
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Domain\obj\Debug\netstandard2.0\ApiPessoa.Domain.AssemblyInfo.cs
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Domain\obj\Debug\netstandard2.0\ApiPessoa.Domain.csproj.CopyComplete
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Domain\obj\Debug\netstandard2.0\ApiPessoa.Domain.dll
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Domain\obj\Debug\netstandard2.0\ApiPessoa.Domain.pdb

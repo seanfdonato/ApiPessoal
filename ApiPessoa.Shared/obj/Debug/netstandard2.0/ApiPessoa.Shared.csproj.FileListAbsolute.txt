@@ -1,0 +1,9 @@
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Shared\bin\Debug\netstandard2.0\ApiPessoa.Shared.deps.json
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Shared\bin\Debug\netstandard2.0\ApiPessoa.Shared.dll
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Shared\bin\Debug\netstandard2.0\ApiPessoa.Shared.pdb
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Shared\obj\Debug\netstandard2.0\ApiPessoa.Shared.csprojAssemblyReference.cache
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Shared\obj\Debug\netstandard2.0\ApiPessoa.Shared.csproj.CoreCompileInputs.cache
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Shared\obj\Debug\netstandard2.0\ApiPessoa.Shared.AssemblyInfoInputs.cache
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Shared\obj\Debug\netstandard2.0\ApiPessoa.Shared.AssemblyInfo.cs
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Shared\obj\Debug\netstandard2.0\ApiPessoa.Shared.dll
+C:\Users\07154205423\Documents\REPOSITORIO\01_DEV\ApiPessoal\ApiPessoa.Shared\obj\Debug\netstandard2.0\ApiPessoa.Shared.pdb

@@ -13,4 +13,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ApiPessoa.Domain\ApiPessoa.Domain.csproj" />
+    <ProjectReference Include="..\ApiPessoa.Infra\ApiPessoa.Infra.csproj" />
+  </ItemGroup>
+
 </Project>
