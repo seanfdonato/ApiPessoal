@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using ApiPessoa.Domain.Repositorios;
 using ApiPessoa.Infra.Repositorios;
+using ApiPessoa.Domain.Handlers;
+
 namespace ApiPessoa.Api
 {
     public class Startup
@@ -19,7 +21,9 @@ namespace ApiPessoa.Api
         {
             services.AddMvc();
             services.AddScoped<Contexto, Contexto>();
+            services.AddScoped<ContextoSQL, ContextoSQL>();
             services.AddTransient<ICargoRepositorio, CargoRepositorio>();
+            services.AddTransient<CargoHandler, CargoHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

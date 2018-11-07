@@ -1,8 +1,6 @@
 ﻿using ApiPessoa.Domain.Entidades;
 using ApiPessoa.Domain.Queries.Cargo;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace ApiPessoa.Domain.Repositorios
 {

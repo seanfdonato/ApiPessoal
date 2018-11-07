@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using ApiPessoa.Domain.Commands.Outputs;
 using ApiPessoa.Domain.Entidades;
+using ApiPessoa.Domain.Handlers;
 using ApiPessoa.Domain.Queries.Cargo;
 using ApiPessoa.Domain.Repositorios;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 
 namespace ApiPessoa.Api.Controllers
@@ -13,9 +12,12 @@ namespace ApiPessoa.Api.Controllers
     public class CargoController : Controller
     {
         private readonly ICargoRepositorio _repositorio;
-        public CargoController(ICargoRepositorio repositorio)
+        private readonly CargoHandler _cargoHandler;
+
+        public CargoController(ICargoRepositorio repositorio, CargoHandler cargoHandler)
         {
             _repositorio = repositorio;
+            _cargoHandler = cargoHandler;
         }
         [HttpGet]
         [Route("cargo")]
@@ -29,12 +31,13 @@ namespace ApiPessoa.Api.Controllers
         {
             return _repositorio.GetById(id);
         }
-        
+
         [HttpPost]
         [Route("cargo")]
-        public void Post([FromBody]Cargo cargo)
+        public CommandResult Post([FromBody]Cargo cargo)
         {
-            _repositorio.Save(cargo);
+            var result = _cargoHandler.Handle(cargo);
+            return result;
         }
 
     }

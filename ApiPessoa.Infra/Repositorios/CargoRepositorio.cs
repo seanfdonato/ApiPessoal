@@ -1,30 +1,31 @@
 ﻿using ApiPessoa.Domain.Entidades;
-using ApiPessoa.Domain.Repositorios;
 using ApiPessoa.Domain.Queries.Cargo;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using ApiPessoa.Domain.Repositorios;
 using ApiPessoa.Infra.DataContexto;
 using Dapper;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 namespace ApiPessoa.Infra.Repositorios
 {
     public class CargoRepositorio : ICargoRepositorio
     {
         private readonly Contexto _contexto;
+        private readonly ContextoSQL _contextoSQL;
 
-        public CargoRepositorio(Contexto contexto)
+        public CargoRepositorio(Contexto contexto, ContextoSQL contextoSQL)
         {
             _contexto = contexto;
+            _contextoSQL = contextoSQL;
         }
         public IEnumerable<ListaCargosQueryResult> Get()
         {
-            return _contexto.Connection.Query<ListaCargosQueryResult>("SELECT * FROM [SiaiDp_Cargo]", new { });
+            return _contextoSQL.Connection.Query<ListaCargosQueryResult>("SELECT * FROM [SiaiDp_Cargo]", new { });
         }
 
         public GetCargoByIdQueryResult GetById(int id)
         {
-            return _contexto.Connection.Query<GetCargoByIdQueryResult>("SELECT * FROM [SiaiDp_Cargo] WHERE [IdCargo]=@IdCargo", new { IdCargo = id }).FirstOrDefault();
+            return _contextoSQL.Connection.Query<GetCargoByIdQueryResult>("SELECT * FROM [SiaiDp_Cargo] WHERE [IdCargo]=@IdCargo", new { IdCargo = id }).FirstOrDefault();
         }
 
         public void Save(Cargo cargo)
@@ -33,9 +34,7 @@ namespace ApiPessoa.Infra.Repositorios
             {
                 try
                 {
-                    //string sql = "INSERT INTO CARGO VALUES  ";
-                    //_contexto.Connection
-                    _contexto.Cargos.Add(cargo);
+                    _contexto.Add(cargo);
                     _contexto.SaveChanges();
                     transaction.Commit();
                 }
@@ -44,7 +43,7 @@ namespace ApiPessoa.Infra.Repositorios
                     transaction.Rollback();
                     throw;
                 }
-                
+
             }
         }
     }
