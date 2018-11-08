@@ -1,8 +1,10 @@
-﻿namespace ApiPessoa.Domain.Commands.Outputs
+﻿using ApiPessoa.Shared.Commands;
+
+namespace ApiPessoa.Domain.Commands.Cargocommands.Outputs
 {
-    public class CommandResult
+    public class CargoCommandResult : ICommandResult
     {
-        public CommandResult(bool success, string message, object data)
+        public CargoCommandResult(bool success, string message, object data)
         {
             Success = success;
             Message = message;

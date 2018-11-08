@@ -1,7 +1,8 @@
-﻿using ApiPessoa.Domain.Entidades;
+﻿using ApiPessoa.Domain.Commands.Cargocommands.Outputs;
+using ApiPessoa.Domain.Commands.CargoCommands.Inputs;
+using ApiPessoa.Domain.Entidades;
 using ApiPessoa.Domain.Repositorios;
 using FluentValidator;
-using ApiPessoa.Domain.Commands.Outputs;
 
 namespace ApiPessoa.Domain.Handlers
 {
@@ -12,11 +13,14 @@ namespace ApiPessoa.Domain.Handlers
         {
             _repositorio = repositorio;
         }
-        public CommandResult Handle(Cargo cargo)
+        public CargoCommandResult Handle(CargoCommandCreate command)
         {
+            Cargo cargo = new Cargo(command.CodigoCargo, command.IdOrgao, command.NomeCargo, command.AtribuicoesCargo, command.CargaHoraria,
+                command.CargaHorariaVariavel, command.IdLegislacao, command.IdCarreira, command.LocalId, command.Ativo);
 
             _repositorio.Save(cargo);
-            return new CommandResult(true, "Cadastrado com sucesso", null);
+
+            return new CargoCommandResult(true, "Cargo cadastrado com sucesso", null);
 
         }
     }

@@ -1,5 +1,5 @@
-﻿using ApiPessoa.Domain.Commands.Outputs;
-using ApiPessoa.Domain.Entidades;
+﻿using ApiPessoa.Domain.Commands.Cargocommands.Outputs;
+using ApiPessoa.Domain.Commands.CargoCommands.Inputs;
 using ApiPessoa.Domain.Handlers;
 using ApiPessoa.Domain.Queries.Cargo;
 using ApiPessoa.Domain.Repositorios;
@@ -20,7 +20,7 @@ namespace ApiPessoa.Api.Controllers
             _cargoHandler = cargoHandler;
         }
         [HttpGet]
-        [Route("cargo")]
+        [Route("cargos")]
         public IEnumerable<ListaCargosQueryResult> Get()
         {
             return _repositorio.Get();
@@ -34,9 +34,9 @@ namespace ApiPessoa.Api.Controllers
 
         [HttpPost]
         [Route("cargo")]
-        public CommandResult Post([FromBody]Cargo cargo)
+        public CargoCommandResult Post([FromBody]CargoCommandCreate command)
         {
-            var result = _cargoHandler.Handle(cargo);
+            CargoCommandResult result = _cargoHandler.Handle(command);
             return result;
         }
 

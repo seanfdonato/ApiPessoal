@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using ApiPessoa.Domain.Handlers;
+using ApiPessoa.Domain.Repositorios;
 using ApiPessoa.Infra.DataContexto;
+using ApiPessoa.Infra.Repositorios;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using ApiPessoa.Domain.Repositorios;
-using ApiPessoa.Infra.Repositorios;
-using ApiPessoa.Domain.Handlers;
 
 namespace ApiPessoa.Api
 {

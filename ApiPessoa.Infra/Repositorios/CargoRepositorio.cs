@@ -23,7 +23,7 @@ namespace ApiPessoa.Infra.Repositorios
             return _contextoSQL.Connection.Query<ListaCargosQueryResult>("SELECT * FROM [SiaiDp_Cargo]", new { });
         }
 
-        public GetCargoByIdQueryResult GetById(int id)
+        public GetCargoByIdQueryResult GetById(int id) 
         {
             return _contextoSQL.Connection.Query<GetCargoByIdQueryResult>("SELECT * FROM [SiaiDp_Cargo] WHERE [IdCargo]=@IdCargo", new { IdCargo = id }).FirstOrDefault();
         }
